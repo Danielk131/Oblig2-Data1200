@@ -1,0 +1,243 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/project/assets/fonts/Montserrat-Bold.ttf);
+}
+
+html {
+    font-size: 14px;
+}
+
+
+body {
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+    width: 100vw;
+    margin:0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    
+}
+
+
+main {
+    box-shadow: 0 0 1px darkgray;
+    background-color: whitesmoke;
+}
+
+header {
+    height: 55vh;
+    background-image:url(/project/assets/img/studentsbg.png);
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    
+    
+}
+
+h1, h2, h3 {
+    font-family: Monteserat, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    padding-top: 0;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: 0; 
+}
+
+p{
+    max-width: 70ch;
+    line-height: 1.5;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+header>div, main, footer {
+    width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+header div {
+    background-color: #c5192d;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -4rem;
+    text-align: center;
+    box-sizing: border-box;
+} 
+
+article {
+    margin:0;
+    padding: 2rem 2rem;
+    box-sizing: border-box;
+    
+}  
+
+article:nth-child(2) {
+    border-bottom: 0.1px solid gray;
+}
+
+
+
+#intro-container {
+    margin-top: 6rem;
+    background-color: #c5192d;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem; 
+    
+    
+}
+#intro-container ul {
+    list-style-type: none;
+    padding-left: 0;
+
+
+}
+
+#intro-container li:nth-child(1)::before {
+    content: "\1F64C";
+    width: 1rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+
+#intro-container li:nth-child(2)::before {
+    content: "\1F3EB";
+    width: 1rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+
+#intro-container li:nth-child(3)::before {
+    content: "\1F4DA";
+    width: 1rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+
+
+
+footer {
+    background-color: #c5192d;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+@media screen and (max-width:599px) {
+    
+article:nth-of-type(3){
+    transform: scaleY(-1);
+}
+
+article:nth-of-type(3) div, article:nth-of-type(3) img{
+    transform: scaleY(-1);
+}
+}
+
+@media screen and (min-width:600px) {
+    html {
+        font-size: 16px;
+    }
+
+
+    header {
+        height: 65vh;
+    }
+
+    
+    div, img {
+        display:inline-block;
+        width: 45%;
+    }
+
+    img {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    header>div, main, footer  {
+        width: 85vw;
+        box-sizing: border-box;
+    }
+    
+
+
+    
+
+
+    article {
+        font-size: 0;
+        border-bottom: solid 0.1px gray;
+    }
+
+    article:last-child{
+        border-bottom: 0;
+    }
+
+    article div {
+
+        font-size: 1.2rem;
+    }
+
+    article:nth-child(1){
+        background: linear-gradient(90deg,#c5192d 50%, whitesmoke 50%);
+    }
+
+    
+
+    #intro-container {
+        background-color: whitesmoke;
+    }
+
+    
+    #intro-container div:first-child{
+        margin-right: 10%;
+}
+
+    article:nth-of-type(odd) img{
+        margin-right: 10%;
+
+    }
+
+    article:nth-of-type(2n) img{
+        margin-left: 10%;
+    }
+
+    article:nth-of-type(2) div{
+        margin-right: 0%;
+
+    }
+
+    img{
+        vertical-align: top;
+    }
+
+    
+}
+
+    
+
+@media screen and (min-width: 960px) {
+    html {
+        font-size: 24px;
+    }
+    header {
+        height: 65vh;
+    }
+    header>div, main, footer {
+        width: 70%;
+    }
+}
