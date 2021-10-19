@@ -1,10 +1,11 @@
 @font-face {
     font-family: Montserrat;
-    src: url(/project/assets/fonts/Montserrat-Bold.ttf);
+    src: url(/assets/fonts/Montserrat-Bold.ttf);
 }
 
 html {
     font-size: 14px;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -15,6 +16,7 @@ body {
     width: 100vw;
     margin:0;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    max-width: 100%;
     overflow-x: hidden;
 }
 
